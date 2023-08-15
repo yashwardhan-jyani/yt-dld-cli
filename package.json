@@ -1,12 +1,12 @@
 {
   "name": "yt-dld",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "yt-dld is a Command Line tool to download youtube videos",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
   "bin": {
-    "cli-1": "index.js"
+    "yt-dld": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
