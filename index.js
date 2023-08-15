@@ -2,7 +2,6 @@
 
 import fs from 'fs';
 import chalk from 'chalk';
-import dotenv from 'dotenv';
 import ytdl from 'ytdl-core';
 import sanitize from 'sanitize-filename';
 import { Command } from 'commander';
@@ -17,14 +16,16 @@ import {
 import { onError } from './utils/errMsg.js';
 import { mkdir } from './utils/directory.js';
 
-dotenv.config();
+const downloadPath = '/tube/downloads';
+const version = 1.1;
+
 const app = new Command();
-const DOWNLOAD_DIR = process.cwd() + process.env.DOWNLOAD_PATH;
+const DOWNLOAD_DIR = process.cwd() + downloadPath;
 
 
 app
     .description('CLI to download youtube video using JavaScript utilities')
-    .version(process.env.VERSION, '-v, --version')
+    .version(version, '-v, --version')
     .arguments('<url>')
     .action((value) => {
         if (!/^(https?\:\/\/)?((www\.)?youtube\.com|youtu\.be)\/.+$/.test(value)) {
