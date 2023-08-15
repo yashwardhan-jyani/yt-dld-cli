@@ -177,7 +177,6 @@ yt-dld "http://www.youtube.com/watch?v=AwRAfxBub9M" -e mp3
 - [`ora`](https://www.npmjs.com/package/ora)
 - [`chalk`](https://www.npmjs.com/package/chalk)
 - [`cli-progress`](https://www.npmjs.com/package/cli-progress)
-- [`dotenv`](https://www.npmjs.com/package/dotenv)
 - [`inquirer`](https://www.npmjs.com/package/inquirer)
 - [`list-it`](https://www.npmjs.com/package/list-it)
 - [`sanitize-filename`](https://www.npmjs.com/package/sanitize-filename)
