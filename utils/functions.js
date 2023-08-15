@@ -4,14 +4,12 @@ import ListIt from 'list-it';
 import StreamSpeed from 'streamspeed';
 import CliProgress from 'cli-progress';
 import sanitize from 'sanitize-filename';
-import dotenv from 'dotenv';
 import { toHumanSize, toHumanTime } from './human.js';
 import { onError } from './errMsg.js';
 import { mkdir } from './directory.js';
 
-dotenv.config();
-const REPORT_DIR = process.cwd() + process.env.DOWNLOAD_REPORT_PATH;
-
+const downloadReportPath = '/tube/reports';
+const REPORT_DIR = process.cwd() + downloadReportPath;
 
 function printVideoBasicInfo(info, live) {
 	const listIt = new ListIt();
