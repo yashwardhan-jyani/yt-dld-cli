@@ -24,7 +24,7 @@ yarn global add yt-dld
 ### Usage ✍️
 
 ```text
-Usage: tube [options] <url>
+Usage: yt-dld [options] <url>
 
 CLI to download youtube video using JavaScript utilities
 
